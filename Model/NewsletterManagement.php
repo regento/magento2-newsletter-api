@@ -166,7 +166,7 @@ class NewsletterManagement implements \Regento\NewsletterAPI\Api\NewsletterManag
         } catch (\Magento\Framework\Exception\LocalizedException $e) {
             $message = __('There was a problem with the subscription: %1', $e->getMessage());
         } catch (\Exception $e) {
-            $message = __('Something went wrong with the subscription.');
+            $message = __('There was a problem with the subscription: %1', $e->getMessage());
         }
 
         $data = array(

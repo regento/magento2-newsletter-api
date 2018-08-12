@@ -23,7 +23,7 @@ interface NewsletterManagementInterface
      * Subscribe an email.
      *
      * @param string $email
-     * @return \Regento\NewsletterAPI\API\Data\NewsletterSubscribeInterface
+     * @return \Regento\NewsletterAPI\Api\Data\NewsletterSubscribeInterface
      */
     public function subscribe($email);
 }
